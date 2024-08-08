@@ -1,0 +1,8 @@
+.active-link{
+    text-decoration: underline;
+    color: #210f53;
+}
+.active-card{
+    border: solid 4px #771717;
+    border-radius: 10px;
+}
