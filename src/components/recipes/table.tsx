@@ -7,12 +7,10 @@ interface Props {
 }
 export default function TableDetailRecipe({ recipe }: Props) {
     return (
-
         <>
             <div>
-           <div className="w-10">
-         
-           </div>
+                <div className="w-10">
+                </div>
                 <div className="block w-4/5  mt-3 bg-white mx-auto ">
                     <table className="items-center bg-transparent w-full border-collapse">
                         <thead>

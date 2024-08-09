@@ -6,9 +6,8 @@ import { IoHeart } from "react-icons/io5";
 interface Props{
     recipe:Recipe
 }
-export default async function RecipeElement({recipe}: Props) {
+export default  function RecipeElement({recipe}: Props) {
   return (
-    <>
     <div className="mx-auto right-0 mt-2 w-60">
       <div className="bg-white rounded overflow-hidden shadow-lg w-60 h-80">
         <div className="text-center p-6 bg-gray-800 border-b">
@@ -41,6 +40,5 @@ export default async function RecipeElement({recipe}: Props) {
         </div>
       </div>
     </div>
-  </>
   );
 }
