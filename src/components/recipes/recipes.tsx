@@ -13,7 +13,7 @@ export default  function RecipeElement({recipe}: Props) {
         <div className="text-center p-6 bg-gray-800 border-b">
           <Image priority={false} src={recipe.image!} className="h-28 w-28 text-white rounded-full mx-auto" width={40} height={40} alt={`image-card-${recipe.name}`}></Image>
           <p className="pt-2 text-md font-semibold text-gray-50 capitalize">{recipe.name.substring(0,20)}</p>
-          <p className="text-sm text-gray-100">{recipe.id}</p>
+          <p className="text-sm text-gray-100">{recipe.difficulty}</p>
           <div className="mt-5">
             <Link href={`detail/${recipe.id}`}
               className="border rounded-full py-2 px-4 text-xs font-semibold text-gray-100"

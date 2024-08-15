@@ -4,11 +4,13 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 interface RecipesState {
     recipes: Recipe[],
-    filter:string
+    filter:string,
+    difficulty: string[]
 }
 const initialState:RecipesState = {
    recipes:[],
-   filter:''
+   filter:'',
+   difficulty:[]
 }
 
 const RecipeSlice = createSlice({
@@ -21,8 +23,12 @@ const RecipeSlice = createSlice({
         updateFilter(state, action:PayloadAction<string>){
             state.filter=action.payload;
         }
+        ,
+        updateDifficulty(state, action:PayloadAction<string[]>){
+            state.difficulty=action.payload;
+        }
     }
 });
 
-export const {addRecipes,updateFilter } = RecipeSlice.actions
+export const {addRecipes,updateFilter, updateDifficulty } = RecipeSlice.actions
 export default RecipeSlice.reducer

@@ -2,6 +2,7 @@ import { IoAddCircle, IoBrowsersOutline, IoCalculator, IoFootball, IoHeart, IoLo
 import Image from "next/image"
 import { SidebarMenuItem } from "./SidebarMenuItem";
 import { Filter } from "../filter";
+import Difficulty from "../difficulty/Difficulty";
 
 const menuItems = [
     {
@@ -62,7 +63,9 @@ export const Sidebar = () => {
                     )
                 })}
                 <Filter/>
+                <Difficulty/>
             </div>
+           
         </div>
   )
 }
