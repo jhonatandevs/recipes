@@ -27,7 +27,7 @@ const Difficulty = () => {
     dispatch(updateDifficulty(updatedDifficulties));
   };
   return (
-    <div className="flex w-full pl-5">
+    <div className="flex w-full pl-5 pt-28  ">
       <div className="justify-center">
         <h3>Filtrar por Dificultad</h3>
         <div className='flex flex-col mx-auto'>
